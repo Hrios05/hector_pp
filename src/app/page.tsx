@@ -93,7 +93,7 @@ export default function Home() {
           className="rounded-full w-28 h-28 object-cover mt-16"
         />
         <h1 className="text-5xl font-bold mt-4">
-          Hey, I'm Hector. <br /> Leader & Engineer.
+          Hey, I&#39;m Hector. <br /> Leader & Engineer.
         </h1>
         <p className="text-lg mt-2">
           I thrive at the intersection of creativity and logic, crafting solutions
@@ -227,7 +227,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8">Projects</h2>
           <div className="flex flex-col gap-12">
             {/* SafeRoute Card */}
-            <a href="https://github.com/Hrios05/SafeRoute" target="_blank" rel="noopener noreferrer" className="block p-6 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg shadow-lg hover:shadow-2xl transition-shadow border-4 border-transparent hover:border-green-300">
+            <a href="https://github.com/Hrios05/SafeRouteSJ" target="_blank" rel="noopener noreferrer" className="block p-6 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg shadow-lg hover:shadow-2xl transition-shadow border-4 border-transparent hover:border-green-300">
               <h3 className="text-xl font-semibold mb-4 text-white">SafeRoute</h3>
               <p className="text-sm text-gray-200 mb-6">Provides the safest route using crime reports and datasets.</p>
               <div className="flex items-center gap-4 text-sm text-gray-100 font-semibold">
@@ -239,7 +239,7 @@ export default function Home() {
             </a>
 
             {/* CensusIncomeClassification Card */}
-            <a href="https://github.com/Hrios05/CensusIncomeClassification" target="_blank" rel="noopener noreferrer" className="block p-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg shadow-lg hover:shadow-2xl transition-shadow border-4 border-transparent hover:border-orange-300">
+            <a href="https://github.com/Hrios05/CensusML" target="_blank" rel="noopener noreferrer" className="block p-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg shadow-lg hover:shadow-2xl transition-shadow border-4 border-transparent hover:border-orange-300">
               <h3 className="text-xl font-semibold mb-4 text-white">Census Income Classification</h3>
               <p className="text-sm text-gray-200 mb-6">Predicts income levels using the 1994 Census Income Dataset with machine learning models.</p>
               <div className="flex items-center gap-4 text-sm text-gray-100 font-semibold">
