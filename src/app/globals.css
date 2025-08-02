@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  /* Increase gap between items */
+  padding: 0.5rem;
+  max-width: 600px;
+  width: 100%;
+  margin-top: 3rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+header .divider {
+  width: 1px;
+  height: 24px;
+  background-color: #e5e5e5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  margin-top: 6rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  width: 160px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+  /* Make the text slightly thicker */
+}
+
+button:hover {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+#resume {
+  padding: 0.25rem 1rem;
+  width: 120px;
+  height: 50px;
+  /* Smaller height */
+  font-size: 0.875rem;
+  border-radius: 12px;
+  /* Match text size */
+  position: relative;
+  z-index: 1;
+}
+
+#resume::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid var(--foreground);
+  border-radius: 12px;
+  /* Match button's border radius */
+  z-index: 0;
+}
+
+#open-opportunities {
+  padding: 0rem 1rem;
+  /* Smaller height */
+  font-size: 0.875rem;
+  border-radius: 100px;
+  width: 200px;
+  height: 50px;
+  /* Match text size */
+  background-color: rgba(57, 255, 20, 0.2);
+  /* Neon light green transparent background */
+  backdrop-filter: blur(5px);
+  /* Backdrop blur effect */
+  border: 1px solid rgba(57, 255, 20, 0.5);
+  /* Adjust border to match neon green */
+  color: #006400;
+  /* Dark green font color */
+}
+
+#send-email-button {
+  background-color: #18181b;
+  /* Default background color */
+  color: white;
+  /* Text color */
+}
+
+#send-email-button:hover {
+  background-color: black;
+  /* Hover background color */
+}
+
+#send-email-button:focus {
+  outline: 2px solid black;
+  /* Focus outline */
+  outline-offset: 2px;
+}
+
+.animate-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.translate-y-10 {
+  transform: translateY(2.5rem);
+}
