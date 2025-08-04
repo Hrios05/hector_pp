@@ -90,7 +90,8 @@ export default function Home() {
           alt="Profile picture"
           width={200}
           height={200}
-          className="rounded-full w-28 h-28 object-cover mt-16"
+          className="rounded-full w-28 h-28 object-cover mt-16 border-1 border-gray-300"
+
         />
         <h1 className="text-5xl font-bold mt-4">
           Hey, I&#39;m Hector. <br /> Leader & Engineer.
@@ -130,7 +131,7 @@ export default function Home() {
             {['Java', 'Swift', 'Python', 'JavaScript', 'C++', 'C', 'TypeScript'].map((lang, index) => (
               <span
                 key={index}
-                className={`flex items-center gap-1 px-2 py-1 rounded-full shadow-lg w-fit text-xs text-white ${['bg-blue-500', 'bg-green-500', 'bg-yellow-500', 'bg-purple-500', 'bg-red-500', 'bg-gray-500', 'bg-cyan-500'][index]}`}
+                className={`flex items-center justify-center gap-1 px-2 py-1 rounded-lg shadow-lg w-20 h-20 text-xs text-white bg-blue-500 puzzle-piece`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <i className={`devicon-${lang.toLowerCase()}-plain text-sm`}></i> {lang}
@@ -147,8 +148,8 @@ export default function Home() {
             {['React', 'Springboot', 'MongoDB', 'Express JS', 'Node.JS', 'Pandas', 'TensorFlow', 'Jupyter Notebooks', 'AWS', 'scikit-learn', 'Docker'].map((tech, index) => (
               <span
                 key={index}
-                className={`flex items-center gap-1 px-2 py-1 rounded-full shadow-lg w-fit text-xs text-white ${['bg-indigo-500', 'bg-teal-500', 'bg-pink-500', 'bg-orange-500', 'bg-green-500', 'bg-blue-500', 'bg-yellow-500', 'bg-gray-500', 'bg-purple-500', 'bg-cyan-500', 'bg-amber-500', 'bg-lime-500'][index]}`}
-                style={{ height: '32px', borderRadius: '9999px' }}
+                className={`flex items-center justify-center gap-1 px-2 py-1 rounded-lg shadow-lg w-20 h-20 text-xs text-white bg-green-500 puzzle-piece`}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <i className={`devicon-${tech.toLowerCase().replace(/ /g, '')}-plain text-sm`}></i> {tech}
               </span>

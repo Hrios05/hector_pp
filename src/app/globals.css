@@ -151,3 +151,74 @@ button:hover {
 .translate-y-10 {
   transform: translateY(2.5rem);
 }
+
+.puzzle-piece {
+  position: relative;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--puzzle-color, #ccc);
+  /* Default color */
+}
+
+.puzzle-piece:nth-child(1) {
+  --puzzle-color: #8B4513;
+  /* SaddleBrown */
+}
+
+.puzzle-piece:nth-child(2) {
+  --puzzle-color: #A0522D;
+  /* Sienna */
+}
+
+.puzzle-piece:nth-child(3) {
+  --puzzle-color: #CD853F;
+  /* Peru */
+}
+
+.puzzle-piece:nth-child(4) {
+  --puzzle-color: #D2B48C;
+  /* Tan */
+}
+
+.puzzle-piece:nth-child(5) {
+  --puzzle-color: #556B2F;
+  /* DarkOliveGreen */
+}
+
+.puzzle-piece:nth-child(6) {
+  --puzzle-color: #6B8E23;
+  /* OliveDrab */
+}
+
+.puzzle-piece:nth-child(7) {
+  --puzzle-color: #8FBC8F;
+  /* DarkSeaGreen */
+}
+
+.puzzle-piece:nth-child(8) {
+  --puzzle-color: #2E8B57;
+  /* SeaGreen */
+}
+
+.puzzle-piece:nth-child(9) {
+  --puzzle-color: #3CB371;
+  /* MediumSeaGreen */
+}
+
+.puzzle-piece:nth-child(10) {
+  --puzzle-color: #228B22;
+  /* ForestGreen */
+}
+
+.puzzle-piece:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.puzzle-piece:nth-child(odd) {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+}
+
+.puzzle-piece:nth-child(even) {
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
